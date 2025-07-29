@@ -27,7 +27,7 @@ a/=2
 print(a)
 a%=2
 print(a)
-# comparison perators
+# comparison operators
 # == -> equal to    
 # != -> not equal to
 # > -> greater than
@@ -54,7 +54,7 @@ print(False and False) #False
 #or
 print(True or True) #True
 print(True or False) #True
-print(False or True) #Trur
+print(False or True) #True
 print(False or False) #False
 #not
 print(not True) #False
@@ -95,7 +95,7 @@ else:
     print("the given number is even")
 # wap to print if the given value is fizz, buzz,fizzbuzz conditions are
 # fizz -> number divide by 3
-# buzz -> number divide by 5   
+# buzz -> number divide by 5
 # fizzbuzz -> number divide by both 3 and 5
 num1= int(input("enter the number: "))
 if (num1%3 == 0):
@@ -104,7 +104,7 @@ elif (num1%5 == 0):
     print("Buzz")
 elif (num1%3==0 and num1%5==0):
     print("FizzBuzz")
-#match statement 
+#match statement
     day = "sunday"
     match(day):
         case "monday":
@@ -115,4 +115,40 @@ elif (num1%3==0 and num1%5==0):
             print("today is wednesday")
         case _:
             print("none of the above")
-            
+# wap to check if a number is positive , negative, or zero using if-elif-else.
+num3 = int(input("Enter the number: "))
+if (num3 > 0):
+        print("The number is positive")
+elif(num3 < 0):
+        print("The number is negative")
+else:
+        print("The number is zero")
+    
+# Ask the user for number and print "High" if it is above 90, "Zero" if it is 0, or "other" otherwise
+num4 = int(input("Enter the number: "))
+if (num4 > 90):
+    print("High")
+elif (num == 0):
+    print("Zero")
+else:
+    print("Others")
+# Demonstrate the use of arithmetic operators by calculating the sum, difference, product, and a quotient of two numbers.
+b = 10
+c = 10
+print(b+c)
+print(b-c)
+print(b*c)
+print(b/c)
+# Show how to use assignment operators (+=, -=, *=, etc.) with an example
+d = 10
+print(d)
+d+=19
+print(d)
+d-=2
+print(d)
+d*=3
+print(d)
+# Wap to demonstrate the use of logical operators (and ,or, not) with boolean values
+print(True and True) #True
+print(True or False) #True
+print(not True) #False
