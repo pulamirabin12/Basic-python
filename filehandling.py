@@ -25,7 +25,7 @@ fs1.close()
 
 # a+ -> append mode
 fs3 = open("text/hi.txt", mode="a+")
-fs3.write(fs0)
+fs3.write(fs(0))
 
 #DELETE  -> REMOVE  -> IMPORT OS
 import os
@@ -33,3 +33,18 @@ os.remove("text/hi.txt") #delete file
 
 # wap to print the table of a number using file handling
 # wap to print the table for 0 to 10 in separate file using file handling
+
+# with -> open and close
+with open("text/hello.txt", "w+") as fs:
+    for i in range (1,11):
+        fs.write(f"7*{1} = {7*i}\n")
+        fs.seek(0)
+    print(fs.read())
+
+# wap to print the table for 0 to 10 in separate file using file handling using with-> open and close
+for i in range (1,11):
+    with open(f"table/multiply{i}.txt", "w") as fs:   
+        for j in range(1,11):
+            fs.write(f"{i} * {j} = {j*i}\n")
+
+
